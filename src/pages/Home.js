@@ -14,8 +14,12 @@ const HomeContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 500px;
     color: white;
+
+    @media (min-height: 600px) {
+        height: 100%;
+    }
 `
 /** 
  * Main title of the page which shows
@@ -24,8 +28,18 @@ const HomeContainer = styled.div`
 const HomeHeading = styled.h1`
     font-size: 7em;
     color: black;
-    @media (max-width: 448px) {
-        font-size: 10vw;
+    @media (max-width: 608px) {
+        font-size: 15vw;
+    }
+`
+/**
+ * Brief description of the web application
+ */
+const HomeDescription = styled.p`
+    color: black;
+    font-size: 1.3em;
+    @media (max-width: 608px) {
+        font-size: 3vw;
     }
 `
 /**
@@ -57,7 +71,9 @@ function Home() {
                 CardForm
             </HomeHeading>
             {/** Home page description */}
-            <p style={{ color: 'black', fontSize: '1.3em' }}>A card component and form for you to use!</p>
+            <HomeDescription>
+                A card component and form for you to use!
+            </HomeDescription>
             {/** Redirects user to /card route */}
             <ClickHereButton
                 onClick={() => history.push('/card')}
