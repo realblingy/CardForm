@@ -142,7 +142,7 @@ function CreditCardForm({
                 <ExpiryMonthSelect onChange={handleExpMonthChange}>
                     {
                         ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-                        .map((month, idx) => <option value={idx}>{month}</option>)
+                        .map((month, idx) => <option key={month} value={idx + 1}>{month}</option>)
                     }
                 </ExpiryMonthSelect>
                 {/** Expiry year field */}
