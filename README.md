@@ -1,7 +1,5 @@
 # CardForm
 
----
-
 ## About
 
 CardForm is an interactive web app where you can see what your card looks like given its number, name, expiry date and CVV. It was made using React and Material UI.
