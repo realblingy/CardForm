@@ -70,7 +70,6 @@ const CreditCardBack = styled.div`
     transform: rotateY(180deg);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transform: rotateX(0deg);
 `
 /**
  * Credit card's name component 
